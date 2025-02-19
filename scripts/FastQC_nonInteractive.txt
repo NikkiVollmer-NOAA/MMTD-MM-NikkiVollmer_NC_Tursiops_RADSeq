@@ -1,0 +1,19 @@
+###How to run FastQC non-interactively thru Terminal on Mac
+
+#Open Terminal
+#change directory to where FastQC is and type:
+./fastqc pathwaytofastqfiles/nameoffiletoanalyze
+
+#If you want to analyze all fastq files in a folder type:
+./fastqc pathwaytofastqfiles/*.fastq.gz
+
+
+
+###How to run FastQC non-interactively thru cmd on PC
+
+#Open Command Prompt window
+#change directory to where FastQC is and type:
+run_fastqc.bat pathwaytofastqfiles\nameoffiletoanalyze
+
+#If you want to analyze all fastq files in a folder type:
+run_fastqc.bat pathwaytofastqfiles\*.fastq.gz
