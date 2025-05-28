@@ -5,7 +5,7 @@
 #SBATCH -o %x_%j.out
 #SBATCH -e %x_%j.err
 #SBATCH -D /home/nvollmer/structure/log
-#SBATCH --array=[1-100]%25
+#SBATCH --array=[1-100]%10
 #SBATCH --mem=16G
 #SBATCH --partition=standard
 #SBATCH --time=7-00
