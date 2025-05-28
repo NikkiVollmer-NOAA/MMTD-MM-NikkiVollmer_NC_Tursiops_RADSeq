@@ -8,7 +8,7 @@
 #SBATCH --array=[1-100]%25
 #SBATCH --mem=16G
 #SBATCH --partition=standard
-#SBATCH --time=48:00:00
+#SBATCH --time=7-00
 
 module load bio/structure/2.3.4
 
