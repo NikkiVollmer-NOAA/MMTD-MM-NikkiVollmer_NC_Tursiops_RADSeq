@@ -47,4 +47,4 @@
 
 
 #define UPDATEFREQ 1 
-#define RANDOMIZE 0
+#define RANDOMIZE 1
