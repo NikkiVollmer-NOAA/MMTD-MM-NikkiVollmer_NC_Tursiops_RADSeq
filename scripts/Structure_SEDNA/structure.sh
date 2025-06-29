@@ -18,7 +18,7 @@ cd ~/structure
 K=$(sed -n "${SLURM_ARRAY_TASK_ID}p" tasks.txt | cut -f1)
 RUN=$(sed -n "${SLURM_ARRAY_TASK_ID}p" tasks.txt | cut -f2)
 
-# Set the seed using the task ID
+# Set the seed using the task ID, if using this make sure RANDOMIZE=0 in mainparam
 SEED=$SLURM_ARRAY_TASK_ID
 
 structure -K $K -D $SEED -m mainparams.txt -o k${K}_run${RUN} 2>&1 | tee k${K}_run${RUN}.log
